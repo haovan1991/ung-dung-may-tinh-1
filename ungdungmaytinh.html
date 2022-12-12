@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h1>caculator</h1>
+<form>
+    <input type="number" id="number1">
+    <input type="number" id="number2">
+
+</form>
+<button onclick="add()" id="add">ADD</button>
+<button onclick="sub()" id="sub">SUB</button>
+<button onclick="mul()" id="mul">MUL</button>
+<button onclick="div()" id="div">DIV</button>
+<p id="result_1">kết qủa là</p>
+
+<script>
+
+function add(){
+    let a;
+    let b;
+    a=Number(document.getElementById("number1").value);
+    b=Number(document.getElementById("number2").value);
+    let c=Number(a+b);
+    let d=document.getElementById("result_1").innerHTML="kết quả là"+" "+c;
+}
+
+</script>
+<script>
+function sub() {
+    let a;
+    let b;
+    a = document.getElementById("number1").value;
+    b = document.getElementById("number2").value;
+    let c = a - b;
+    let d = document.getElementById("result_1").innerHTML = "kết quả là" + " " + c;
+}
+</script>
+<script>
+    function mul() {
+        let a;
+        let b;
+        a = document.getElementById("number1").value;
+        b = document.getElementById("number2").value;
+        let c = a * b;
+        let d = document.getElementById("result_1").innerHTML = "kết quả là" + " " + c;
+    }
+</script>
+<script>
+    function div() {
+        let a;
+        let b;
+        a = document.getElementById("number1").value;
+        b = document.getElementById("number2").value;
+        let c = a / b;
+        let d = document.getElementById("result_1").innerHTML = "kết quả là" + " " + c;
+    }
+</script>
+</body>
+</html>
